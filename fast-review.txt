@@ -1,0 +1,33 @@
+Modes   --->    Normal mode or command mode, when you press ESC
+                Insert mode or line mode or last line mode or command line mode, editing the file
+                Visual mode, select mulitiple things
+
+------------------------------
+
+vim fun.py  --->    Create python python file
+q!  --->    Force quit
+wq  --->    Save then exit
+j   --->    Down
+k   --->    Up
+h   --->    Left
+l   --->    Right
+^f  --->    Page down
+^b  --->    Page up
+w   --->    Move forward by word
+W   --->    Move forward by word+panctuation
+b   --->    Move backward by word
+B   --->    Move backward by word+panctuation
+gg  --->    go to first line
+G   --->    go to end line
+0   --->    Home
+^   --->    Home
+$   --->    End
+g^g --->    where are you?!
+dw  --->    delete a word
+dl  --->    delete right character
+dh  --->    delete left character
+dk  --->    delete line+before line
+dj  --->    delete line+next line
+d^  --->    delete Home to cursor 
+d$  --->    delete cursor to end
+dd  --->    delete line
