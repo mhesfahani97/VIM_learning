@@ -1,3 +1,5 @@
+------------------------------
+
 Modes   --->    Normal mode or command mode, when you press ESC
                 Insert mode or line mode or last line mode or command line mode, editing the file
                 Visual mode, select mulitiple things
@@ -17,17 +19,47 @@ w   --->    Move forward by word
 W   --->    Move forward by word+panctuation
 b   --->    Move backward by word
 B   --->    Move backward by word+panctuation
-gg  --->    go to first line
-G   --->    go to end line
+gg  --->    Go to first line
+G   --->    Go to end line
 0   --->    Home
 ^   --->    Home
 $   --->    End
-g^g --->    where are you?!
-dw  --->    delete a word
-dl  --->    delete right character
-dh  --->    delete left character
-dk  --->    delete line+before line
-dj  --->    delete line+next line
-d^  --->    delete Home to cursor 
-d$  --->    delete cursor to end
-dd  --->    delete line
+g^g --->    Where are you?!
+dw  --->    Delete a word
+dl  --->    Delete right character
+dh  --->    Delete left character
+dk  --->    Delete line+before line
+dj  --->    Delete line+next line
+d^  --->    Delete Home to cursor 
+d$  --->    Delete cursor to end
+dd  --->    Delete line
+2d3w    --->    Twice delete three words
+z+Enter --->    Better vision
+.   --->   Do it again 
+db  --->   Delete backward word 
+:h d    --->    Help for d command
+p   --->   Paste after cursor 
+P   --->   Paste cursor 
+x   --->   Cut cursor
+X   --->   Cut character befor the cursor
+
+------------------------------
+
+Liture  --->    cut = delete, copy = yank, paste = put
+
+------------------------------
+
+y$  --->   Copy from cursor to end of line 
+y^  --->   Copy from cursor to start of line  
+y2w --->   Copy two words
+4yy --->   Copy four lines 
+
+------------------------------
+
+Registers   --->    Unnamed register or "", hold text from d, c, s, x and y operations
+                    Number register or "0 "1 ...., "0 holds text from yanked and "1 holds text from delete ro change operation
+                    other numbers shift whith each d or c operation
+
+------------------------------
+
+
