@@ -97,7 +97,21 @@ N   --->    Previous one
 :set nois   --->    Disable :set is
 :set hls    --->    Hilight words in searching time
 :set nohls  --->    Disable :set hls
-?apple  --->   find apple
-d/apple --->    delete from cursor to apple
-:.,$s/apple/APPLE/g --->    change all the apple words to APPLE
+?apple  --->   Find apple
+d/apple --->    Delete from cursor to apple
+:.,$s/apple/APPLE/g --->    Change all the apple words to APPLE
+:/pattern1/,/pattern2/s/apple/orange/g  --->    Change apple to orange from pattern1 to pattern2 in the text file
+:set nu --->    Set numbers for lines
+:set nonu   --->    Disable set nu
+:set nu!    --->    Toggle set nu command
+80i * Esc   --->    print * for 80 times
+3o - Esc    --->    print - in 3 lines
 
+------------------------------
+
+daw --->    delete a word with white spaces
+ciw --->    change a word without white spaces
+dap --->    delete a paragraph with before and after white spaces
+dip --->    delete a paragraph without white spaces
+das --->    delete a sentences with before and after white spaces
+dis --->    delete a sentences without white spaces
