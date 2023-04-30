@@ -7,41 +7,41 @@ Modes   --->    Normal mode or command mode, when you press ESC
 ------------------------------
 
 vim fun.py  --->    Create python python file
-q!  --->    Force quit
-wq  --->    Save then exit
-j   --->    Down
-k   --->    Up
-h   --->    Left
-l   --->    Right
-^f  --->    Page down
-^b  --->    Page up
-w   --->    Move forward by word
-W   --->    Move forward by word+panctuation
-b   --->    Move backward by word
-B   --->    Move backward by word+panctuation
-gg  --->    Go to first line
-G   --->    Go to end line
-0   --->    Home
-^   --->    Home
-$   --->    End
-g^g --->    Where are you?!
-dw  --->    Delete a word
-dl  --->    Delete right character
-dh  --->    Delete left character
-dk  --->    Delete line+before line
-dj  --->    Delete line+next line
-d^  --->    Delete Home to cursor 
-d$  --->    Delete cursor to end
-dd  --->    Delete line
-2d3w    --->    Twice delete three words
-z+Enter --->    Better vision
-.   --->   Do it again 
-db  --->   Delete backward word 
-:h d    --->    Help for d command
-p   --->   Paste after cursor 
-P   --->   Paste cursor 
-x   --->   Cut cursor
-X   --->   Cut character befor the cursor
+q!          --->    Force quit
+wq          --->    Save then exit
+j           --->    Down
+k           --->    Up
+h           --->    Left
+l           --->    Right
+^f          --->    Page down
+^b          --->    Page up
+w           --->    Move forward by word
+W           --->    Move forward by word+panctuation
+b           --->    Move backward by word
+B           --->    Move backward by word+panctuation
+gg          --->    Go to first line
+G           --->    Go to end line
+0           --->    Home
+^           --->    Home
+$           --->    End
+g^g         --->    Where are you?!
+dw          --->    Delete a word
+dl          --->    Delete right character
+dh          --->    Delete left character
+dk          --->    Delete line+before line
+dj          --->    Delete line+next line
+d^          --->    Delete Home to cursor 
+d$          --->    Delete cursor to end
+dd          --->    Delete line
+2d3w        --->    Twice delete three words
+z+Enter     --->    Better vision
+.           --->   Do it again 
+db          --->   Delete backward word 
+:h d        --->    Help for d command
+p           --->   Paste after cursor 
+P           --->   Paste cursor 
+x           --->   Cut cursor
+X           --->   Cut character befor the cursor
 
 ------------------------------
 
@@ -63,55 +63,107 @@ Registers   --->    Unnamed register or "", hold text from d, c, s, x and y oper
 ------------------------------
 
 :reg    --->    Show the registers
-"ayy   --->    Yank one line in a register
-"Ayy   --->    Append line to a register
+"ayy    --->    Yank one line in a register
+"Ayy    --->    Append line to a register
 2"bp    --->    Paste "b register twice
-i   --->    Insert mode
-I   --->    Insert mode from HOME
-A   --->    Insert mode from END
-a   --->    Insert mode from next character
-O   --->    Insert a new line, up
-o   --->    Insert a new line, down
-r   --->    Replace one character
-R   --->    Start replacing
+i       --->    Insert mode
+I       --->    Insert mode from HOME
+A       --->    Insert mode from END
+a       --->    Insert mode from next character
+O       --->    Insert a new line, up
+o       --->    Insert a new line, down
+r       --->    Replace one character
+R       --->    Start replacing
 "acw    --->    Save the word in register a and remove it
-c$  --->    Change from cursor to END
-cc  --->    Change a line
-~   --->    Capital <---> small
-g~w --->    Capital <---> small a word
-gu$ --->    Lower case from cursor to END
-gU$ --->    Upper case from cursor to END
+c$      --->    Change from cursor to END
+cc      --->    Change a line
+~       --->    Capital <---> small
+g~w     --->    Capital <---> small a word
+gu$     --->    Lower case from cursor to END
+gU$     --->    Upper case from cursor to END
 
 ------------------------------
 
-fa  --->    Find forward the character a
-Fa ---> Find backward the character b
-;   --->    Go forward one
-,   --->    Go backward one
-2fa --->    Find the second a character
-dfa --->    Delete from cursor to character a
-/apple + Enter  --->    Find apple
-n   --->    Next one
-N   --->    Previous one
-:set is --->    Online word finding in searching time
-:set nois   --->    Disable :set is
-:set hls    --->    Hilight words in searching time
-:set nohls  --->    Disable :set hls
-?apple  --->   Find apple
-d/apple --->    Delete from cursor to apple
-:.,$s/apple/APPLE/g --->    Change all the apple words to APPLE
+fa                                      --->    Find forward the character a
+Fa                                      --->    Find backward the character b
+;                                       --->    Go forward one
+,                                       --->    Go backward one
+2fa                                     --->    Find the second a character
+dfa                                     --->    Delete from cursor to character a
+/apple + Enter                          --->    Find apple
+n                                       --->    Next one
+N                                       --->    Previous one
+:set is                                 --->    Online word finding in searching time
+:set nois                               --->    Disable :set is
+:set hls                                --->    Hilight words in searching time
+:set nohls                              --->    Disable :set hls
+?apple                                  --->    Find apple
+d/apple                                 --->    Delete from cursor to apple
+:.,$s/apple/APPLE/g                     --->    Change all the apple words to APPLE
 :/pattern1/,/pattern2/s/apple/orange/g  --->    Change apple to orange from pattern1 to pattern2 in the text file
-:set nu --->    Set numbers for lines
-:set nonu   --->    Disable set nu
-:set nu!    --->    Toggle set nu command
-80i * Esc   --->    print * for 80 times
-3o - Esc    --->    print - in 3 lines
+:set nu                                 --->    Set numbers for lines
+:set nonu                               --->    Disable set nu
+:set nu!                                --->    Toggle set nu command
+80i * Esc                               --->    Print * for 80 times
+3o - Esc                                --->    Print - in 3 lines
 
 ------------------------------
 
-daw --->    delete a word with white spaces
-ciw --->    change a word without white spaces
-dap --->    delete a paragraph with before and after white spaces
-dip --->    delete a paragraph without white spaces
-das --->    delete a sentences with before and after white spaces
-dis --->    delete a sentences without white spaces
+daw             --->    Delete a word with white spaces
+ciw             --->    Change a word without white spaces
+dap             --->    Delete a paragraph with before and after white spaces
+dip             --->    Delete a paragraph without white spaces
+das             --->    Delete a sentences with before and after white spaces
+dis             --->    Delete a sentences without white spaces
+di(             --->    Delete characters in the ( )
+                        or you can use for "", <>, {}, '', `` and <>....<> for html
+qa              --->    Start macro a and finish it   
+q
+@a              --->    Do macro a
+@@              --->    Do the latest macro
+:5,10normal @a  --->    Apply macro a to line 5 to 10
+let @a=''       --->    Save the macro a in .vimrc for ever
+
+------------------------------
+
+Visual mode --->    v         -> Character wise
+                    shift + v -> Line wise
+                    ^v        -> Block wise
+
+------------------------------when you are in character wise mode
+
+3iw  --->    Select three words without white siaces
+1ap  --->    Select one paragraph with white spaces
+
+------------------------------Indeed
+
+:set shiftwidth     --->
+:set tabstop        --->
+:set expandtab      --->
+:set shiftwidth     --->
+> enter             --->    Shift to right
+< enter             --->    Shift to left
+:right              --->    Set the sentence right
+:left               --->    Set the sentence left
+:center             --->    Set the sentence center
+
+vim file1.txt file2.txt file3.txt   --->    Open 3 files
+:buffers                            --->    Show the opened files
+                                            Col1 is buffer number
+                                            Col2 is buffer flag --->    % is current window
+                                                                        a is the active buffer
+                                                                        + has been modified without saving
+                                                                        # previous buffer you were
+                                            Col3 is buffer file name
+:b2                  --->    Open the buffer2                    
+:bn                  --->    Next buffer
+:bp                  --->    Previous buffer
+:wall                --->    Save all the buffers
+:badd file_address   --->    Add a new file
+:2,3bd               --->    Delete the buffers 2 and 3
+:history             --->    Show the history
+:set history=500     --->    Use it in .vimrc for saving 500 command in history
+:set ruller          --->   
+:bufdo %s/#/@/g | w  --->    Change the # to @ in all of the buffers and write all of them
+:E                   --->    Explore
+:bd                  --->    Delete current buffer
