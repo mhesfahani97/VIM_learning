@@ -35,13 +35,13 @@ d$          --->    Delete cursor to end
 dd          --->    Delete line
 2d3w        --->    Twice delete three words
 z+Enter     --->    Better vision
-.           --->   Do it again 
-db          --->   Delete backward word 
+.           --->    Do it again 
+db          --->    Delete backward word 
 :h d        --->    Help for d command
-p           --->   Paste after cursor 
-P           --->   Paste cursor 
-x           --->   Cut cursor
-X           --->   Cut character befor the cursor
+p           --->    Paste after cursor 
+P           --->    Paste cursor 
+x           --->    Cut cursor
+X           --->    Cut character befor the cursor
 
 ------------------------------
 
@@ -137,10 +137,9 @@ Visual mode --->    v         -> Character wise
 
 ------------------------------Indeed
 
-:set shiftwidth     --->
-:set tabstop        --->
-:set expandtab      --->
-:set shiftwidth     --->
+:set shiftwidth=4   --->    Referred to for levels of indentation
+:set tabstop=4      --->    how many columns a tab should be made up
+:set expandtab      --->    makes sure that spaces are used for indenting lines, even when you press the 'Tab' key
 > enter             --->    Shift to right
 < enter             --->    Shift to left
 :right              --->    Set the sentence right
